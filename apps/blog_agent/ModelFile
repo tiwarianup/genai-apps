@@ -1,0 +1,10 @@
+FROM llama3
+
+# Set parameters
+
+PARAMETER temperature 0.8
+PARAMETER stop Result
+
+# Sets a custom mesage to specify the behaviour of the chat assistant.
+
+SYSTEM """"""

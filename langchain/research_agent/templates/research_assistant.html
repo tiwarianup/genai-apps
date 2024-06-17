@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Research Assistant</title>
+    <link href="{% url 'static' %}css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <h1>Research Assistant</h1>
+        <div class="row">
+            <div class="col-md-12">
+                <p>Question: {{ question }}</p>
+                <h2>Research Summary</h2>
+                <p>{{ research_summary }}</p>
+                <h2>Report</h2>
+                <div class="card">
+                    <div class="card-body">
+                        {{ report }}  # Assuming 'report' key holds the generated report content
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="{% url 'static' %}js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
